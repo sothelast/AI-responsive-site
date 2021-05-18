@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="F:\Program Files\fontawesome\css\all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="icon" href="2.jpeg">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            max-width: 100%;
+        }
+        
+        .home {
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            overflow: hidden;
+        }
+        
+        #so {
+            display: none;
+        }
+        
+        .logo {
+            position: absolute;
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+            top: 50px;
+            left: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+        }
+        
+        .logo span {
+            font-style: italic;
+            font-family: cursive;
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 50%;
+            text-align: center;
+        }
+        
+        .nav>ul {
+            list-style: none;
+            float: right;
+            margin: 20px 60px;
+        }
+        
+        .nav>ul>li {
+            padding: 5px;
+            display: inline-block;
+            margin: 20px;
+        }
+        
+        .nav>ul>li:hover {
+            border-bottom: 2px solid rgb(140, 167, 240);
+            cursor: pointer;
+        }
+        
+        .nav>ul>li:hover a {
+            text-shadow: 0px 0px 20px white;
+            color: white;
+        }
+        
+        .nav>ul>li>a {
+            text-decoration: none;
+            color: rgb(125, 228, 217);
+            font-size: 25px;
+        }
+        
+        .imagebg {
+            width: 820px;
+            height: 630px;
+            position: absolute;
+            right: 80px;
+            bottom: 0;
+        }
+        
+        .titlecontant {
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            transform: translateY(-45%);
+            width: 620px;
+            height: 300px;
+            color: white;
+            padding: 5px;
+        }
+        
+        .title {
+            font-size: 50px;
+            color: aqua;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-bottom: 1px solid white;
+        }
+        
+        #littletext {
+            font-size: 27px;
+            color: aqua;
+            font-weight: bold;
+        }
+        
+        .para {
+            font-size: 20px;
+            text-align: justify;
+            margin: 30px 20px;
+        }
+        
+        @media (max-width: 800px) {
+            .home {
+                padding: 0;
+            }
+            .logo {
+                top: 4%;
+                left: 5%;
+                font-size: 43px;
+            }
+            #nivg {
+                position: absolute;
+                top: 30px;
+                right: 20px;
+                font-size: 30px;
+                color: white;
+                cursor: pointer;
+            }
+            .nav {
+                width: 600px;
+                height: 700px;
+                border-radius: 50%;
+                background-color: tomato;
+                transform: translate(-100%, -60%);
+                position: absolute;
+                z-index: 99;
+                transition: all .5s;
+            }
+            .nav>ul {
+                margin-top: 40%;
+            }
+            .nav>ul>li {
+                display: block;
+                padding: 5px 10px;
+            }
+            .nav>ul>li>a {
+                color: black;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            .nav>ul>li:hover {
+                border: none;
+            }
+            #so:checked~.nav {
+                transform: translate(-50%, -30%);
+                transition: all .4s;
+            }
+            .imagebg {
+                width: 100%;
+                height: 60%;
+                left: -140px;
+                bottom: 0;
+            }
+            .titlecontant {
+                top: 300px;
+                width: 90%;
+            }
+            .title {
+                font-size: 27px;
+                margin-left: -25px;
+            }
+            #littletext {
+                font-size: 23px;
+            }
+            .para {
+                margin-left: 20%;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="home">
+            <!-- mubile nivagation bar code -->
+            <input type="checkbox" id="so">
+            <label for="so">
+              <i id="nivg" class="fas fa-bars"></i>
+           </label>
+            <!-- mubile nivagation bar code -->
+
+            <h2 class="logo">
+                <span>A</span>&nbsp;Apex.bot
+            </h2>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Robotics</a></li>
+                    <li><a href="#">Thinking</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+
+            <img src="images/robot-2587571_1920-removebg-preview.png" alt="image" class="imagebg">
+
+            <span class="titlecontant">
+                <span class="title">Artificial Intelligence</span><br>
+            <span id="littletext">In Future,</span>
+            <p class="para">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the Ai-enabled future, humans will be able to converse and interact with each other in the native language of choice, not haveing to worry about miscommunicationg intentions.
+            </p>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
